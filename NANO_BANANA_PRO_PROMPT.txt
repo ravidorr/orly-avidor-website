@@ -1,0 +1,44 @@
+GOOGLE NANO BANANA PRO - CAKE IMAGE PROCESSING PROMPT
+=====================================================
+
+Use this exact prompt for each cake image:
+
+---
+
+Transform this cake image into a professional product photograph with these exact specifications:
+
+COMPOSITION:
+- Perfect square format (1:1 aspect ratio, 2048x2048 pixels)
+- Pure white background (#FFFFFF)
+- Cake centered precisely in the frame
+- Cake occupies 90% of the image area
+- Professional product photography perspective
+
+LIGHTING & COLOR:
+- Soft, even studio lighting
+- Consistent color temperature (neutral white, 5500K)
+- No harsh shadows
+- Natural highlights that enhance cake details
+- Color-accurate representation
+
+CRITICAL REQUIREMENTS:
+- DO NOT add any decorative elements not present in the original cake
+- DO NOT remove any existing cake decorations or features
+- DO NOT modify the cake's design, colors, or structure
+- PRESERVE all original cake details exactly as they appear
+- Maintain super-realistic, photographic quality
+- NO artistic filters or stylization
+
+STYLE: Professional product photography, super realistic, magazine-quality
+
+---
+
+QUICK CHECKLIST FOR EACH PROCESSED IMAGE:
+☐ Square format (1:1)
+☐ White background
+☐ Cake centered
+☐ Cake = 90% of frame
+☐ No added decorations
+☐ No removed details
+☐ Consistent lighting
+☐ Super realistic quality
