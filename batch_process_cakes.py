@@ -28,7 +28,7 @@ if not API_KEY:
 INPUT_FOLDER = "images/cakes"              # Original cake images
 OUTPUT_FOLDER = "images/cakes-processed"   # Processed output
 BACKUP_FOLDER = "images/cakes-original-backup"  # Safety backup
-MODEL_ID = "gemini-3-pro-image-preview"    # Nano Banana Pro model
+MODEL_ID = "nano-banana-pro-preview"       # Nano Banana Pro model
 
 # Your Exact Prompt from NANO_BANANA_PRO_PROMPT.txt
 PROMPT_TEXT = """

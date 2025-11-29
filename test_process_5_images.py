@@ -26,7 +26,7 @@ if not API_KEY:
 
 INPUT_FOLDER = "images/cakes"
 OUTPUT_FOLDER = "images/cakes-test-output"  # Separate folder for test
-MODEL_ID = "gemini-3-pro-image-preview"
+MODEL_ID = "nano-banana-pro-preview"
 
 # Your Exact Prompt
 PROMPT_TEXT = """
