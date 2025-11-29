@@ -84,7 +84,7 @@ for i, img in enumerate(test_images, 1):
     print(f"  {i}. {img}")
 
 print("\n" + "=" * 60)
-input("Press Enter to start test processing (or Ctrl+C to cancel)...")
+print("Starting test processing...")
 print()
 
 # Track timing and success
@@ -117,6 +117,12 @@ for index, filename in enumerate(test_images, 1):
             img = img.crop((left, top, right, bottom))
             print(f"    Pre-cropped to: {min_dim}x{min_dim}")
 
+        # Convert image to bytes for API
+        import io
+        img_byte_arr = io.BytesIO()
+        img.save(img_byte_arr, format='PNG')
+        img_bytes = img_byte_arr.getvalue()
+
         # Send to API
         print(f"    Sending to Nano Banana Pro...")
         response = client.models.generate_content(
@@ -126,7 +132,7 @@ for index, filename in enumerate(test_images, 1):
                     role="user",
                     parts=[
                         types.Part.from_text(text=PROMPT_TEXT),
-                        types.Part.from_image(image=img)
+                        types.Part.from_bytes(data=img_bytes, mime_type="image/png")
                     ]
                 )
             ],

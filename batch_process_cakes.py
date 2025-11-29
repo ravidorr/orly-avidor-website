@@ -124,6 +124,12 @@ for index, filename in enumerate(image_files, 1):
             bottom = top + min_dim
             img = img.crop((left, top, right, bottom))
 
+        # Convert image to bytes for API
+        import io
+        img_byte_arr = io.BytesIO()
+        img.save(img_byte_arr, format='PNG')
+        img_bytes = img_byte_arr.getvalue()
+
         # Send to Gemini 3 Pro Image (Nano Banana Pro)
         response = client.models.generate_content(
             model=MODEL_ID,
@@ -132,7 +138,7 @@ for index, filename in enumerate(image_files, 1):
                     role="user",
                     parts=[
                         types.Part.from_text(text=PROMPT_TEXT),
-                        types.Part.from_image(image=img)
+                        types.Part.from_bytes(data=img_bytes, mime_type="image/png")
                     ]
                 )
             ],
