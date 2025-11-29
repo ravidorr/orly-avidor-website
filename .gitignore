@@ -14,3 +14,15 @@
 # Temporary files
 *.tmp
 .cache/
+
+# API Keys and Secrets (NEVER COMMIT THESE!)
+.env
+*.key
+api_key.txt
+config_secret.py
+__pycache__/
+*.pyc
+
+# Processed images (too large for git)
+images/cakes-processed/
+images/cakes-original-backup/

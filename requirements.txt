@@ -1,0 +1,5 @@
+# Python dependencies for cake image batch processing
+
+google-genai>=0.1.0
+Pillow>=10.0.0
+python-dotenv>=1.0.0
